@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ImageView
+            android:id="@+id/image_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/spread_picture"
+            android:scaleType="centerCrop"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:minWidth="48dp">
+        <Button
+            android:id="@+id/bt_spread_Jump"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minWidth="50dp"
+            android:text="跳过"
+            android:textColor="#FCFCFC"
+            android:textSize="13sp"
+            android:background="@drawable/spreadad_jump_bg_selector"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5s"
+            android:textSize="18sp"
+            android:textColor="#FCFCFC"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_id"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_name"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

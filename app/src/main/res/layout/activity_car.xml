@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CarActivity">
+
+    <cn.charon.racegame.carGame.GameView
+        android:id="@+id/car_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+ <!--   <ImageView
+        android:id="@+id/road"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/road1"
+        />-->
+
+
+<!--    <ImageView
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/car1"/>-->
+
+    <Button
+        android:id="@+id/left"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Left" />
+    <Button
+        android:id="@+id/top"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/left"
+        android:layout_alignParentLeft="true"
+        android:text="Top" />
+    <Button
+        android:id="@+id/right"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Right" />
+    <Button
+        android:id="@+id/down"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Down" />
+</RelativeLayout>
