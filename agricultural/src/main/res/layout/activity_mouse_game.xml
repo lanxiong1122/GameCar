@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/mousebg"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_marginTop="30dp"
+        >
+        <TextView android:id="@+id/tv_score"
+            android:text="得分：00"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <ImageView android:id="@+id/img11"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img12"
+            android:src="@drawable/dong"/>
+        <TextView android:id="@+id/tv_time"
+            android:layout_height="match_parent"
+            android:text="倒计时：60"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        >
+        <ImageView android:id="@+id/img21"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img22"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img23"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img24"
+            android:src="@drawable/dong"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp"
+        >
+        <ImageView android:id="@+id/img31"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img32"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img33"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img34"
+            android:src="@drawable/dong"/>
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_weight="1"
+            android:background="@drawable/btnselected"
+            android:text="暂停" />
+        <ImageView android:id="@+id/img41"
+            android:layout_weight="1"
+            android:src="@drawable/dong"/>
+        <ImageView android:id="@+id/img42"
+            android:layout_weight="1"
+            android:src="@drawable/dong"/>
+        <Button  android:id="@+id/btn_start"
+            android:text="开始"
+            android:layout_weight="1"
+            android:background="@drawable/btnselected"/>
+
+    </TableRow>
+</TableLayout>
