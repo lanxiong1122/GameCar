@@ -1,4 +1,4 @@
-rootProject.name = "racegame"
+rootProject.name = "GameCar"
 include ':app'
 include ':desert'
 include ':cat'
