@@ -137,19 +137,19 @@ public class Playground extends SurfaceView implements View.OnTouchListener {
         AlertDialog.Builder builder = new AlertDialog.Builder(this_context);
 //                设置图标，按钮，内容
         builder.setIcon(R.drawable.lose);
-        builder.setTitle("神经猫跑掉了！");
+        builder.setTitle("The cat ran away!");
 //        builder.setMessage("内容");
-        builder.setPositiveButton("再试一次", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("do it again", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(this_context,"再来一次"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(this_context,"Once more"+which,Toast.LENGTH_SHORT).show();
                 this_context.startActivity(new Intent(this_context, Surface_view.class));
             }
         });
-        builder.setNegativeButton("返回主菜单", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Return to the main Page", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(this_context,"返回主菜单"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(this_context,"Return to the main Page"+which,Toast.LENGTH_SHORT).show();
                 this_context.startActivity(new Intent(this_context,IndexActivity.class));
             }
         });
@@ -163,19 +163,19 @@ public class Playground extends SurfaceView implements View.OnTouchListener {
         AlertDialog.Builder builder = new AlertDialog.Builder(this_context);
 //                设置图标，按钮，内容
         builder.setIcon(R.drawable.win);
-        builder.setTitle("恭喜你！你成功的抓住了神经猫！");
+        builder.setTitle("congratulations! You successfully caught the cat!");
 //        builder.setMessage("内容");
-        builder.setPositiveButton("再来一次", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Once more", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(this_context,"再来一次"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(this_context,"Once more"+which,Toast.LENGTH_SHORT).show();
                 this_context.startActivity(new Intent(this_context, Surface_view.class));
             }
         });
-        builder.setNegativeButton("返回主菜单", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Return to the main Page", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(this_context,"返回主菜单"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(this_context,"Return to the main Page"+which,Toast.LENGTH_SHORT).show();
                 this_context.startActivity(new Intent(this_context,IndexActivity.class));
             }
         });

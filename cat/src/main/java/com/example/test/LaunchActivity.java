@@ -36,9 +36,9 @@ public class LaunchActivity extends AppCompatActivity {
             public void run() {
                 //关闭当前Activity,防止返回时，再次回到该页面
                 LaunchActivity.this.finish();
-                Intent intent = new Intent(LaunchActivity.this, LoginActivity.class);
+                Intent intent = new Intent(LaunchActivity.this, IndexActivity.class);
                 startActivity(intent);
             }
-        },3*1000);
+        },2*1000);
     }
 }

@@ -113,7 +113,7 @@ public class LayoutXml_view extends AppCompatActivity{
                             chessboard[finalRow][finalColumn]=1;
                             CatMove();
                         }else {
-                            Toast.makeText(LayoutXml_view.this,"这个地块已经放置了路障，请重新选择",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LayoutXml_view.this,"This plot has already been blocked, please choose again",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -157,20 +157,20 @@ public class LayoutXml_view extends AppCompatActivity{
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 //                设置图标，按钮，内容
         builder.setIcon(R.drawable.lose);
-        builder.setTitle("神经猫跑掉了！");
-        builder.setPositiveButton("再试一次", new DialogInterface.OnClickListener() {
+        builder.setTitle("The cat ran away!");
+        builder.setPositiveButton("do it again", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(LayoutXml_view.this,"再来一次"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(LayoutXml_view.this,"Once more"+which,Toast.LENGTH_SHORT).show();
                 //关闭当前Activity,防止返回时，再次回到该页面
                 LayoutXml_view.this.finish();
                 startActivity(new Intent(LayoutXml_view.this, LayoutXml_view.class));
             }
         });
-        builder.setNegativeButton("返回主菜单", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Return to the main Page", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(LayoutXml_view.this,"返回主菜单"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(LayoutXml_view.this,"Return to the main Page"+which,Toast.LENGTH_SHORT).show();
                 //关闭当前Activity,防止返回时，再次回到该页面
                 LayoutXml_view.this.finish();
                 startActivity(new Intent(LayoutXml_view.this,IndexActivity.class));
@@ -185,21 +185,21 @@ public class LayoutXml_view extends AppCompatActivity{
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 //                设置图标，按钮，内容
         builder.setIcon(R.drawable.win);
-        builder.setTitle("恭喜你！你成功的抓住了神经猫！");
+        builder.setTitle("congratulations! You successfully caught the cat!");
 //        builder.setMessage("内容");
-        builder.setPositiveButton("再来一次", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Once more", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(LayoutXml_view.this,"再来一次"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(LayoutXml_view.this,"Once more"+which,Toast.LENGTH_SHORT).show();
                 //关闭当前Activity,防止返回时，再次回到该页面
                 LayoutXml_view.this.finish();
                 startActivity(new Intent(LayoutXml_view.this, LayoutXml_view.class));
             }
         });
-        builder.setNegativeButton("返回主菜单", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Return to the main Page", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(LayoutXml_view.this,"返回主菜单"+which,Toast.LENGTH_SHORT).show();
+                Toast.makeText(LayoutXml_view.this,"Return to the main Page"+which,Toast.LENGTH_SHORT).show();
                 //关闭当前Activity,防止返回时，再次回到该页面
                 LayoutXml_view.this.finish();
                 startActivity(new Intent(LayoutXml_view.this,IndexActivity.class));

@@ -16,9 +16,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_gravity="center"
-        android:text="围住神经猫"
-        android:textSize="50dp" />
+        android:text="@string/app_name"
+        android:textSize="20sp" />
 
     <Button
         android:layout_marginTop="20dp"
@@ -28,6 +30,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/imgbtn2"
         android:text="  开始游戏》》》》Java版  "
+        android:visibility="gone"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
@@ -38,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/imgbtn2"
-        android:text="  开始游戏》》》》XML版  "
+        android:text=" Start"
+        android:textAllCaps="true"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
