@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
-    <string name="app_name">农业科普APP</string>
-    <string name="game_time">剩余时间：</string>
+    <string name="app_name">Vegetable Elimination Game</string>
+    <!--<string name="game_time">剩余时间：</string>
     <string name="lost">游戏失败</string>
     <string name="lost_restart">时间到！游戏失败！</string>
     <string name="dialog_sure">确定</string>
@@ -21,5 +21,27 @@
         \t\t\t\t随着城镇化进程不断加速，青少年接触农业、农村的机会越来越少。所以利用信息技术开展青少年农业科普教育正变得越来越迫切。\n
 \t\t\t\t本课题利用Android和数据库技术，开发农业科普Android APP，把农业科普知识通过APP、互动小游戏的方式展现出来，
         寓教于乐向青少年推荐农业知识，提高人们对农业的了解水平，促进农业发展。
-    </string>
+    </string>-->
+    <string name="game_time">Time Remaining:</string>
+    <string name="lost">Game Over</string>
+    <string name="lost_restart">Time\'s Up! Game Over!</string>
+    <string name="dialog_sure">OK</string>
+    <string name="success">Mission Accomplished</string>
+    <string name="success_restart">Mission Accomplished! Proceed to the next level</string>
+    <string name="remaining_time">Time Remaining: %1$d</string>
+    <string name="pass">Level Cleared</string>
+    <string name="pass_restart">Congratulations, Master! You\'ve successfully cleared the game!</string>
+    <string name="welcome">Welcome to the Agricultural Education App</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Log In</string>
+    <string name="register">Sign Up</string>
+    <string name="lianliankan">Match Match</string>
+    <string name="hitmouse">Whack-a-Mole</string>
+    <string name="about">With the acceleration of urbanization, opportunities for young people to access agriculture and rural areas are decreasing. Therefore, it is becoming increasingly urgent to use information technology to provide agricultural education to young people.
+Agricultural knowledge is presented through applications and interactive games, combining learning with entertainment, recommending agricultural knowledge to young people, improving their understanding of agriculture, and promoting agricultural development.\n v1.0</string>
+
+    <string name="str_web_back">返回</string>
+    <string name="str_web_copy">链接已复制</string>
+    <string name="str_web_url_null">链接不能为空</string>
 </resources>

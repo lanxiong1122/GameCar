@@ -1,66 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
-    <RelativeLayout
+
+    <!-- Vertical LinearLayout for startBtn and rankBtn -->
+    <LinearLayout
+        android:id="@+id/one_part"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        >
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/startBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="开始"/>
-        <Button
-            android:id="@+id/levelBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/startBtn"
-            android:layout_centerHorizontal="true"
-            android:text="难度：简单"
-            />
-        <Button
-            android:id="@+id/bgmBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/levelBtn"
-            android:layout_centerHorizontal="true"
-            android:text="音乐：打开"
-            />
-        <Button
-            android:id="@+id/beepBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/bgmBtn"
-            android:layout_centerHorizontal="true"
-            android:text="提示音：打开"
-            />
-        <Button
-            android:id="@+id/vibrateBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/beepBtn"
-            android:layout_centerHorizontal="true"
-            android:text="震动：打开"
-            />
+            android:textAllCaps="false"
+            android:text="Start" />
+
         <Button
             android:id="@+id/rankBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/vibrateBtn"
-            android:layout_centerHorizontal="true"
-            android:text="排行榜"/>
-        <Button
-            android:id="@+id/exitBtn"
+            android:textAllCaps="false"
+            android:text="Ranking List" />
+
+    </LinearLayout>
+
+    <!-- Horizontal LinearLayout for other buttons -->
+    <LinearLayout
+        android:id="@+id/lai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_part"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Left column of buttons -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rankBtn"
-            android:layout_centerHorizontal="true"
-            android:text="退出"/>
-    </RelativeLayout>
+            android:orientation="vertical"
+            android:layout_marginRight="16dp">
+
+            <Button
+                android:id="@+id/levelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Difficulty: Simple"/>
+
+            <Button
+                android:id="@+id/bgmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Music: Open"/>
+
+        </LinearLayout>
+
+        <!-- Right column of buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/beepBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Sound prompt: Open"/>
+
+            <Button
+                android:id="@+id/vibrateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Vibration: Open"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Exit button placed below all others -->
+    <Button
+        android:id="@+id/aboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lai"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:text="About Us"/>
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lai"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="Exit"/>
 
 </RelativeLayout>

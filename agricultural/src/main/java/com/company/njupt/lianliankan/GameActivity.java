@@ -339,7 +339,7 @@ public class GameActivity extends AppCompatActivity implements BaseHandlerCallBa
         if(beep)
             this.mp.start();
         score += this.gameTime;
-        this.scoreTextView.setText("分数：" + score);
+        this.scoreTextView.setText("Score：" + score);
         //判断是否还有剩下的方块, 如果没有, 游戏胜利
         if (!this.gameService.hasPieces()) {
             //游戏胜利
@@ -410,8 +410,8 @@ public class GameActivity extends AppCompatActivity implements BaseHandlerCallBa
         if (this.score > Integer.parseInt(scoreRank[5 * level - 1])) {
             final EditText editText = new EditText(GameActivity.this);
             AlertDialog.Builder inputDialog = new AlertDialog.Builder(GameActivity.this);
-            inputDialog.setTitle("大侠，请在排行榜留下您的姓名").setView(editText).setCancelable(false);
-            inputDialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            inputDialog.setTitle("Great hero, please leave your name on the leaderboard").setView(editText).setCancelable(false);
+            inputDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     int begin = 5 * (level - 1);
@@ -464,8 +464,8 @@ public class GameActivity extends AppCompatActivity implements BaseHandlerCallBa
         switch (msg.what) {
             case MESSAGE_ID:
                 timeTextView.setText(String.format(getString(R.string.remaining_time), gameTime));
-                scoreTextView.setText("分数：" + score);
-                stageTextView.setText("关卡：" + stage);
+                scoreTextView.setText("Score：" + score);
+                stageTextView.setText("Levels：" + stage);
                 gameTime--; //游戏剩余时间减少
                 //时间小于0, 游戏失败
                 if (gameTime < 0) {

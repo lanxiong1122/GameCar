@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="简单模式"
+        android:text="Simple Mode"
         android:textSize="25sp"
         android:textStyle="bold" />
     <LinearLayout
@@ -39,7 +39,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通模式"
+        android:text="Normal mode"
         android:textSize="25sp"
         android:textStyle="bold" />
     <LinearLayout
@@ -68,7 +68,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="困难模式"
+        android:text="Difficult Mode"
         android:textSize="25sp"
         android:textStyle="bold" />
     <LinearLayout

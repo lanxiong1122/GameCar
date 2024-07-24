@@ -73,20 +73,20 @@ public class LianliankanActivity extends AppCompatActivity {
         levelBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String str = (String) levelBtn.getText();
-                if (str.equals("难度：简单"))
+                if (str.equals("Difficulty: Simple"))
                 {
-                    str = "难度：普通";
+                    str = "Difficulty: Ordinary";
                     level = 2;
                 }
-                else if (str.equals("难度：普通"))
+                else if (str.equals("Difficulty: Difficult"))
                 {
-                    str = "难度：困难";
-                    level = 3;
-                }
-                else if (str.equals("难度：困难"))
-                {
-                    str = "难度：简单";
+                    str = "Difficulty: Simple";
                     level = 1;
+                }
+                else if (str.equals("Difficulty: Ordinary"))
+                {
+                    str = "Difficulty: Difficult";
+                    level = 3;
                 }
                 levelBtn.setText(str);
             }
@@ -94,15 +94,15 @@ public class LianliankanActivity extends AppCompatActivity {
         bgmBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String str = (String) bgmBtn.getText();
-                if (str.equals("音乐：打开"))
+                if (str.equals("Music: Open"))
                 {
-                    str = "音乐：关闭";
+                    str = "Music: Off";
                     bgm = false;
                     mp.pause();
                 }
-                else if (str.equals("音乐：关闭"))
+                else if (str.equals("Music: Off"))
                 {
-                    str = "音乐：打开";
+                    str = "Music: Open";
                     bgm = true;
                     mp.start();
                 }
@@ -112,14 +112,14 @@ public class LianliankanActivity extends AppCompatActivity {
         beepBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String str = (String) beepBtn.getText();
-                if (str.equals("提示音：打开"))
+                if (str.equals("Sound prompt: Open"))
                 {
-                    str = "提示音：关闭";
+                    str = "Sound prompt: Close";
                     beep = false;
                 }
-                else if (str.equals("提示音：关闭"))
+                else if (str.equals("Sound prompt: Close"))
                 {
-                    str = "提示音：打开";
+                    str = "Sound prompt: Open";
                     beep = true;
                 }
                 beepBtn.setText(str);
@@ -128,14 +128,14 @@ public class LianliankanActivity extends AppCompatActivity {
         vibrateBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String str = (String) vibrateBtn.getText();
-                if (str.equals("震动：打开"))
+                if (str.equals("Vibration: Open"))
                 {
-                    str = "震动：关闭";
+                    str = "Vibration: Off";
                     vibrate = false;
                 }
-                else if (str.equals("震动：关闭"))
+                else if (str.equals("Vibration: Off"))
                 {
-                    str = "震动：打开";
+                    str = "Vibration: Open";
                     vibrate = true;
                 }
                 vibrateBtn.setText(str);
@@ -150,10 +150,18 @@ public class LianliankanActivity extends AppCompatActivity {
         });
         exitBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent();
+                /*Intent intent = new Intent();
                 intent.setClass(LianliankanActivity.this, LeadActivity.class);  //从MainActivity跳转到RankActivity
                 startActivity(intent);
-                mp.pause();
+                mp.pause();*/
+                finish();
+            }
+        });
+        findViewById(R.id.aboutUs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LianliankanActivity.this, com.company.njupt.lianliankan.AboutActivity.class);
+                startActivity(intent);
             }
         });
     }

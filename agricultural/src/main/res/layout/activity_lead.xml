@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/hitmouse_btn"
-            android:text="关于游戏">
+            android:text="About Game">
     </Button>
 </RelativeLayout>
 </RelativeLayout>
