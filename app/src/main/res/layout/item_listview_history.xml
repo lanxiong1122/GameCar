@@ -21,7 +21,7 @@
                 android:padding="5dp"
                 android:textColor="#4285F4"
                 android:textSize="18sp"
-                android:text="游戏时间："
+                android:text="Game time："
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -43,7 +43,7 @@
                 android:padding="5dp"
                 android:textColor="#4285F4"
                 android:textSize="18sp"
-                android:text="游戏分数："
+                android:text="Game score："
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -59,7 +59,7 @@
                 android:padding="5dp"
                 android:textColor="#4285F4"
                 android:textSize="18sp"
-                android:text="分"
+                android:text="Point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:gravity="center_vertical"
-                android:text="排名："
+                android:text="ranking："
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"

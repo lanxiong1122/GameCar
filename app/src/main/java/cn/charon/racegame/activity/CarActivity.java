@@ -96,15 +96,15 @@ public class CarActivity extends AppCompatActivity implements View.OnClickListen
      */
     private void gameOverTip(String data, int score) {
         AlertDialog.Builder dialog = new AlertDialog.Builder(CarActivity.this);
-        dialog.setMessage("游戏结束！本局得分" + score + "分");
+        dialog.setMessage("game over! This game scores " + score + "point");
         dialog.setCancelable(false);
-        dialog.setNeutralButton("返回主界面", new DialogInterface.OnClickListener() {
+        dialog.setNeutralButton("Return to the mainPage", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 finish();
             }
         });
-        dialog.setPositiveButton("保存分数", new DialogInterface.OnClickListener() {
+        dialog.setPositiveButton("Save Score", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 saveScore(data, score);
@@ -118,15 +118,15 @@ public class CarActivity extends AppCompatActivity implements View.OnClickListen
      */
     private void gameBackTip() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(CarActivity.this);
-        dialog.setMessage("你确定要退出本局游戏吗？退出后游戏记录将不会保存");
+        dialog.setMessage("Are you sure you want to exit this game? After exiting, game records will not be saved");
         dialog.setCancelable(false);
-        dialog.setNeutralButton("继续游戏", new DialogInterface.OnClickListener() {
+        dialog.setNeutralButton("Continue playing", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //carSurface.conTinue();
             }
         });
-        dialog.setPositiveButton("不玩了", new DialogInterface.OnClickListener() {
+        dialog.setPositiveButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 finish();
@@ -167,7 +167,7 @@ public class CarActivity extends AppCompatActivity implements View.OnClickListen
         editor.putString("scoreHistory", strJson);
         editor.apply();
         Toast.makeText(this
-                , "分数已记录", Toast.LENGTH_SHORT).show();
+                , "Score recorded", Toast.LENGTH_SHORT).show();
         finish();
     }
 

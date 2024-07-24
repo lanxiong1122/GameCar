@@ -7,8 +7,8 @@ android {
     buildToolsVersion "33.0.3"
 
     defaultConfig {
-        applicationId "cn.charon.racegame"
-        minSdkVersion 24
+        applicationId "com.charon.raceeva"
+        minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -21,6 +21,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    lintOptions {
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

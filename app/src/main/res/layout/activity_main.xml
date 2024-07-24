@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:minWidth="50dp"
-            android:text="跳过"
+            android:text="Skip"
             android:textColor="#FCFCFC"
             android:textSize="13sp"
             android:background="@drawable/spreadad_jump_bg_selector"/>

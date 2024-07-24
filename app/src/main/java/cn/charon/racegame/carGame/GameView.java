@@ -82,7 +82,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
         canvas.drawColor(Color.WHITE);
         ps.setColor(Color.BLUE);
         ps.setTextSize(70f);
-        canvas.drawText("Score:"+score+"分",50,90,ps);
+        canvas.drawText("Score:"+score,50,90,ps);
         drawLoad(canvas);
         main=new Rect(mainCar.getX(),mainCar.getY(),mainCar.getX()+mainCar.getBp().getWidth(),mainCar.getY()+mainCar.getBp().getHeight());
         enemyRect1=new Rect(enemyCar1.getX(),enemyCar1.getY(),enemyCar1.getX()+enemyCar1.getBitmap().getWidth(),enemyCar1.getY()+enemyCar1.getBitmap().getHeight());
@@ -100,7 +100,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
             canvas.drawBitmap(boom.getBitmap(),boom.getX(),boom.getY(),null);
             mt.isrunning(false);
             //回调监听
-            String timeFormat = "yyyy年MM月dd日";
+            //String timeFormat = "yyyy年MM月dd日";
+            String timeFormat = "MMMM dd, yyyy";
             SimpleDateFormat TIME_FORMAT = new SimpleDateFormat(timeFormat);
             String str =  TIME_FORMAT.format(new Date());
             listener.gameOver(str,score);
