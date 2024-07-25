@@ -52,6 +52,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             android:padding="16dp">
 
             <TextView
@@ -76,6 +77,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
+            android:visibility="gone"
             android:background="#dddddd" />
 
         <LinearLayout
@@ -110,5 +112,12 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="#dddddd" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="We are a leading enterprise dedicated to technological innovation and customer service, focusing on developing high-quality products and solutions to meet customer needs. Established for many years, our team is composed of a group of passionate professionals who possess extensive experience and expertise in their respective fields. Our mission is to provide excellent value and services to global customers through continuous technological innovation. From software development to hardware design, from market analysis to strategic consulting, our services cover multiple industries. With strong research and development capabilities and a customer-centric service philosophy, we have established a good reputation in the industry and established long-term cooperative relationships with numerous well-known enterprises and institutions."
+            android:textSize="18sp"
+            />
     </LinearLayout>
 </ScrollView>

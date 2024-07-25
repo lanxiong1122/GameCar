@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">中国象棋</string>
+<!--    <string name="app_name">中国象棋</string>
     <string name="now_loading">正在加载,请稍后…</string>
     <string name="load_book_failed">数据加载失败!</string>
     <string name="congratulations_you_win">祝贺你取得胜利！</string>
@@ -31,5 +31,5 @@
     <string name="source_code">源码地址</string>
     <string name="j_chinese_chess">JChineseChess</string>
     <string name="my_github">我的GitHub</string>
-    <string name="web_view_refresh">刷新</string>
+    <string name="web_view_refresh">刷新</string>-->
 </resources>

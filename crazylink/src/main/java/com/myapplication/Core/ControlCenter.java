@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import javax.microedition.khronos.opengles.GL10;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -956,8 +958,10 @@ public class ControlCenter {
 
 	
 	//消息处理
-    public static Handler mHandler = new Handler(){   
-        @Override  
+    @SuppressLint("HandlerLeak")
+	public static Handler mHandler = new Handler(){
+        @SuppressLint("HandlerLeak")
+		@Override
 		public void handleMessage(Message msg) 
 		{
 			    // process incoming messages here
@@ -998,7 +1002,8 @@ public class ControlCenter {
 				}
 				case LOADING_START:	
 					mScene = E_SCENARIO.GAME;
-					mIsLoading = true;
+					//mIsLoading = true;
+					mIsLoading = false; // 不展示启动loading
 			    	drawLoading.control.start();
 			    	break;
 				case LOADING_END:

@@ -169,7 +169,7 @@ public class ScreenTouch {
 		return true;
 	}
 	
-	void raiseTouchMenuViewEvent()
+	public void raiseTouchMenuViewEvent()
 	{
 		ControlCenter.mScore.init();
 		ControlCenter.mScore.setLife(CrazyLinkConstent.LIFE_NUM);

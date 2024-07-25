@@ -5,18 +5,18 @@ android {
 
     signingConfigs {
         demokey {
-            storeFile file('demokey.jks')
-            storePassword "demokey"
-            keyAlias 'demokey'
-            keyPassword 'demokey'
+            storeFile file('qi.jks')
+            storePassword "123456"
+            keyAlias 'qi'
+            keyPassword '123456'
         }
     }
     defaultConfig {
         applicationId "com.hzy.chinese.jchess"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 5
-        versionName "1.0.4"
+        versionCode 101
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

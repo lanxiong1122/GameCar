@@ -18,6 +18,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
+import android.os.Handler;
 import android.os.Message;
 import android.view.MotionEvent;
 
@@ -67,6 +68,13 @@ public class CrazyLinkGLSurfaceView extends GLSurfaceView{
     			}
     		}.start();   	    	
     	}
+		// 延迟1.2秒
+		new Handler().postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				screenTouch.raiseTouchMenuViewEvent();
+			}
+		},1200);
         
     }
 	
