@@ -7,5 +7,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="AppTheme.PopupOverlay" parent="Widget.MaterialComponents.PopupMenu">
+            <item name="android:paddingBottom">12dp</item>
+            <item name="android:paddingTop">12dp</item>
+            <item name="android:paddingLeft">16dp</item>
+            <item name="android:paddingRight">16dp</item>
+        </style>
 </resources>
