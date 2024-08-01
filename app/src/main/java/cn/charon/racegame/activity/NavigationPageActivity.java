@@ -77,7 +77,8 @@ public class NavigationPageActivity extends AppCompatActivity implements View.On
                 public void onClick(View v) {
                     Intent intent = new Intent(NavigationPageActivity.this, WebActivity.class);
                     intent.putExtra("title", "Privacy Policy");
-                    intent.putExtra("url", "https://www.freeprivacypolicy.com/live/31179630-926d-41c9-96e3-ed67932629c6");
+                    //intent.putExtra("url", "https://www.freeprivacypolicy.com/live/31179630-926d-41c9-96e3-ed67932629c6");
+                    intent.putExtra("url", "ys");
                     startActivity(intent);
                     alertDialog.dismiss();
                 }
@@ -89,7 +90,7 @@ public class NavigationPageActivity extends AppCompatActivity implements View.On
                 public void onClick(View v) {
                     Intent intent = new Intent(NavigationPageActivity.this, WebActivity.class);
                     intent.putExtra("title", "Our Mission");
-                    intent.putExtra("url", "file:///android_asset/about.html");
+                    intent.putExtra("url", "ab");
                     startActivity(intent);
                     alertDialog.dismiss();
                 }

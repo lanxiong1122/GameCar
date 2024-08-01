@@ -31,8 +31,12 @@
     </LinearLayout>
 
     <!-- WebView to display the web content -->
-    <WebView
-        android:id="@+id/webView"
+    <TextView
+        android:id="@+id/textv"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:focusable="true"
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
