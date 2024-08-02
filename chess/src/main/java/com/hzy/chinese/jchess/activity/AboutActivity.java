@@ -1,5 +1,6 @@
 package com.hzy.chinese.jchess.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,13 +59,14 @@ public class AboutActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.version_info_item:
-                WebViewActivity.startUrl(this, getString(R.string.github_release_page));
+                //WebViewActivity.startUrl(this, getString(R.string.github_release_page));
                 break;
             case R.id.source_code_item:
-                WebViewActivity.startUrl(this, getString(R.string.github_project_page));
+                //WebViewActivity.startUrl(this, getString(R.string.github_project_page));
                 break;
             case R.id.about_me_item:
-                WebViewActivity.startUrl(this, getString(R.string.github_user_page));
+                //WebViewActivity.startUrl(this, getString(R.string.github_user_page));
+                startActivity(new Intent(AboutActivity.this,YSActivity.class));
                 break;
         }
     }
