@@ -46,28 +46,26 @@ public class SplachActivity extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SplachActivity.this, CrazyLinkActivity.class));
-                finish();
             }
         });
         findViewById(R.id.start_go).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SplachActivity.this, CrazyLinkActivity.class));
-                finish();
             }
         });
         findViewById(R.id.privacy_policy_text).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CustomWebDialog customWebDialog = new CustomWebDialog();
-                customWebDialog.show(SplachActivity.this,"https://www.jd.com");
+                customWebDialog.show(SplachActivity.this,"file:///android_asset/wys.html");
             }
         });
         findViewById(R.id.about_app_text).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CustomWebDialog customWebDialog = new CustomWebDialog();
-                customWebDialog.show(SplachActivity.this,"https://www.baidu.com");
+                customWebDialog.show(SplachActivity.this,"file:///android_asset/wo.html");
             }
         });
     }
