@@ -46,7 +46,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this,LayoutXml_view.class));
                 break;
             case R.id.privacyPolicy:
-                loadUrl = "blank:about";
+                loadUrl = "file:///android_asset/catbe.html";
                 startActivity(new Intent(this,WangYeActivity.class));
                 break;
             case R.id.aboutUs:
