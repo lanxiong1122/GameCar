@@ -30,9 +30,9 @@ public class ReadyView extends BaseView {
     private float strhei;
     private boolean isBtChange;
     private boolean isBtChange2;
-    private String startGame = "开始游戏";
-    private String exitGame = "退出游戏";
-    private String version = "HurTeng特别版";
+    private String startGame = "Start";
+    private String exitGame = "Exit";
+    private String version = "Thunder Ready";
     private float version_width;//版本信息宽度
     private float version_height;//版本信息长度
 
@@ -120,7 +120,7 @@ public class ReadyView extends BaseView {
     @Override
     public void initBitmap() {
         background = BitmapFactory.decodeResource(getResources(), R.drawable.bg_01);
-        text = BitmapFactory.decodeResource(getResources(), R.drawable.text);
+        text = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
         planefly = BitmapFactory.decodeResource(getResources(), R.drawable.fly);
         button = BitmapFactory.decodeResource(getResources(), R.drawable.button);
         button2 = BitmapFactory.decodeResource(getResources(), R.drawable.button2);

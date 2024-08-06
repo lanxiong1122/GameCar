@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
         if (DebugConstant.DOUBLECLICK_EXIT) {
             if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
                 if (System.currentTimeMillis() - firstTime > 2000) {
-                    Toast.makeText(MainActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Press again to exit the program", Toast.LENGTH_SHORT).show();
                     firstTime = System.currentTimeMillis();
                 } else {
                     finish();

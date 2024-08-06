@@ -2,14 +2,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88ffbe2d"
     tools:context="com.hurteng.stormplane.MainActivity" >
 
     <TextView
+        android:id="@+id/appp_name_tu"
          android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:text="@string/app_name"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textSize="35sp"
+        android:paddingTop="4dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/bg_go"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/appp_name_tu"
+        android:layout_centerHorizontal="true"
+        android:textColor="#007ee1"
+        />
 
-
+    <TextView
+        android:id="@+id/our_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Our Info"
+        android:padding="5dp"
+        android:background="@drawable/bg_go"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/our"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tu_bg"
+        android:layout_below="@+id/our_info"
+        />
 </RelativeLayout>
